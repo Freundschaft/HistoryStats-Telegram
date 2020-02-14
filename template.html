@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="HistoryStats 0.1.3.1" />
+    <title>Statistics for {{personalInformation.username}} - HistoryStats</title>
+    <style type="text/css">
+        h1 { font-family: Verdana, Arial, sans-serif; font-size: 16pt; }
+        div, span, td { font-family: Verdana, Arial, sans-serif; font-size: 10pt; }
+        span[title], td[title], div[title] { cursor: help; }
+        span[title] { border-bottom: 1px dotted; }
+        span[title]:hover, td[title]:hover { background-color: #FFFFCF; }
+        table { border-collapse: collapse; }
+        td { border: 1px solid #7F7F7F; text-align: left; padding: 2px 4px 2px 4px; }
+        div.footer { padding: 12px 0px 8px 0px; }
+        tr.header td { background-color: #DFDFDF; text-align: center; }
+        tr.header td div { height: 1px; overflow: hidden; }
+        tr.omitted td { background-color: #DFDFDF; }
+        tr.totals td { background-color: #DFDFDF; }
+        td.num { text-align: right; }
+        td.bars_bottom { vertical-align: bottom; padding: 4px 0px 0px 0px; }
+        td.bars_middle { vertical-align: middle; padding: 2px 0px 2px 0px; }
+        td.img_bottom { vertical-align: bottom; text-align: center; padding: 4px 0px 0px 0px; }
+        td.img_middle { vertical-align: middle; text-align: center; padding: 2px 0px 2px 0px; }
+        td.q1 { vertical-align: middle; padding: 2px 2px 2px 2px; }
+        td.q1 div.n { text-align: center; }
+        div.q1 { position: relative; left: 50%; margin-left: -50px; width: 100px; height: 15px; background-color: #FFFFFF; }
+        div.q1 div { position: absolute; top: 0px; height: 15px; overflow: hidden; font-size: 80%; color: #FFFFFF; }
+        div.q1 div.obar { left: 0px; background-color: #E8641B; }
+        div.q1 div.ibar { right: 0px; background-color: #7CC623; }
+        div.q1 div.otext { left: 2px; width: 48px; text-align: left; z-index: 9; }
+        div.q1 div.itext { right: 2px; width: 48px; text-align: right; z-index: 9; }
+        td.q2 { vertical-align: middle; padding: 2px 2px 2px 2px; }
+        td.q2 div.n { text-align: center; }
+        div.q2 { position: relative; left: 50%; margin-left: -50px; width: 100px; height: 15px; background-color: #FFFFFF; }
+        div.q2 div { position: absolute; top: 0px; height: 15px; overflow: hidden; font-size: 80%; color: #FFFFFF; }
+        div.q2 div.obar { left: 0px; background-color: #E8641B; }
+        div.q2 div.ibar { right: 0px; background-color: #7CC623; }
+        div.q2 div.otext { left: 2px; width: 48px; text-align: left; z-index: 9; }
+        div.q2 div.itext { right: 2px; width: 48px; text-align: right; z-index: 9; }
+        td.q3 { vertical-align: middle; padding: 2px 2px 2px 2px; }
+        td.q3 div.n { text-align: center; }
+        div.q3 { position: relative; left: 50%; margin-left: -50px; width: 100px; height: 15px; background-color: #FFFFFF; }
+        div.q3 div { position: absolute; top: 0px; height: 15px; overflow: hidden; font-size: 80%; color: #FFFFFF; }
+        div.q3 div.obar { left: 0px; background-color: #E8641B; }
+        div.q3 div.ibar { right: 0px; background-color: #7CC623; }
+        div.q3 div.otext { left: 2px; width: 48px; text-align: left; z-index: 9; }
+        div.q3 div.itext { right: 2px; width: 48px; text-align: right; z-index: 9; }
+        td.q4 { vertical-align: middle; padding: 2px 2px 2px 2px; }
+        td.q4 div.n { text-align: center; }
+        div.q4 { position: relative; left: 50%; margin-left: -35px; width: 70px; height: 15px; background-color: #BFBFBF; }
+        div.q4 div { position: absolute; top: 0px; left: 0px; height: 15px; overflow: hidden; background-color: #0581B4; }
+        div.q5 { position: relative; left: 50%; margin-left: -17px; width: 34px; height: 50px; }
+        div.q5 div { position: absolute; top: 0px; width: 4px; height: 50px; overflow: hidden; }
+        div.q5 div div { position: absolute; left: 0px; width: 4px; height: 50px; background-color: #0581B4; }
+    </style>
+</head>
+<body><h1>Statistics for {{personalInformation.username}}</h1>
+<table>
+    <tr class="header">
+        <td rowspan="2">#</td>
+        <td rowspan="2">Nick</td>
+        <td colspan="2"><span title="Characters per week">Characters</span><div style="width: 100px;"></div></td>
+        <td colspan="2"><span title="Messages per week">Messages</span><div style="width: 100px;"></div></td>
+        <td colspan="2"><span title="Chats per week">Chats</span><div style="width: 100px;"></div></td>
+        <!--<td rowspan="2">Chat duration<div style="width: 70px;"></div></td>-->
+        <!--<td rowspan="2"><span title="Based on all messages">Most common words</span></td>-->
+        <td rowspan="2"><span title="Based on all messages">Total word count</span></td>
+        <td rowspan="2"><span title="Based on all characters">Days of week</span><div style="width: 34px;"></div></td>
+    </tr>
+    <tr class="header">
+        <td>Outgoing</td>
+        <td>Incoming</td>
+        <td>Outgoing</td>
+        <td>Incoming</td>
+        <td>Outgoing</td>
+        <td>Incoming</td>
+    </tr>
+
+
+    {{each(options.chats)}}
+    <tr>
+        <td class="num">{{@index + 1}}.</td>
+        <td title="[First] 17.12.2002 19:52:26 / [Last] 11.09.2006 18:20:30">{{@this.name}}</td>
+        <td colspan="2" class="q1" title="[Out] {{@this.sentCharacters}} / [In] {{@this.receivedCharacters}}"><div class="n">{{@this.totalCharacters}}</div><div class="q1"><div class="obar" style="width: {{@this.sentCharactersPercentage}}px;"></div><div class="ibar" style="width: {{@this.receivedCharactersPercentage}}px;"></div><div class="otext">{{@this.sentCharactersPercentage}}%</div><div class="itext">{{@this.receivedCharactersPercentage}}%</div></div></td>
+        <td colspan="2" class="q2" title="[Out] {{@this.sentMessages}} / [In] {{@this.receivedMessages}}"><div class="n">{{@this.totalMessages}}</div><div class="q2"><div class="obar" style="width: {{@this.sentMessagesPercentage}}px;"></div><div class="ibar" style="width: {{@this.receivedMessagesPercentage}}px;"></div><div class="otext">{{@this.sentMessagesPercentage}}%</div><div class="itext">{{@this.receivedMessagesPercentage}}%</div></div></td>
+        <td colspan="2" class="q3" title="[Out] {{@this.sentChats}} / [In] {{@this.receivedChats}}"><div class="n">{{@this.totalChats}}</div><div class="q3"><div class="obar" style="width: {{@this.sentChatsPercentage}}px;"></div><div class="ibar" style="width: {{@this.receivedChatsPercentage}}px;"></div><div class="otext">{{@this.sentChatsPercentage}}%</div><div class="itext">{{@this.receivedChatsPercentage}}%</div></div></td>
+        <!--<td class="q4" title="[Min] 00:00 / [Avg] 00:15 / [Max] 05:32"><div class="n">{{@this.totalChatDuration.d}}d {{@this.totalChatDuration.h}}:{{@this.totalChatDuration.m}}</div><div class="q4"><div style="width: {{@this.chatDurationWidth}}px;"></div></div></td>-->
+        <!--<td><span title="9349">ich</span>, <span title="5497">und</span>, <span title="5113">die</span>, <span title="4930">das</span>, <span title="4503">der</span>, <span title="4424">du</span>, <span title="4137">ja</span>, <span title="4020">is</span>, <span title="3201">was</span>, <span title="2894">lol</span></td>-->
+        <td class="num" title="27.941 distinct">{{@this.totalWords}}</td>
+        <td class="bars_bottom"><div class="q5">
+            <div title="[Mon] {{@this.messagesByWeekDay[0]}}" style="left: 0px;"><div style="top: {{@this.messagesByWeekDayPixelOffsets[0]}}px;"></div></div>
+            <div title="[Tue] {{@this.messagesByWeekDay[1]}}" style="left: 5px;"><div style="top: {{@this.messagesByWeekDayPixelOffsets[1]}}px;"></div></div>
+            <div title="[Wed] {{@this.messagesByWeekDay[2]}}" style="left: 10px;"><div style="top: {{@this.messagesByWeekDayPixelOffsets[2]}}px;"></div></div>
+            <div title="[Thu] {{@this.messagesByWeekDay[3]}}" style="left: 15px;"><div style="top: {{@this.messagesByWeekDayPixelOffsets[3]}}px;"></div></div>
+            <div title="[Fri] {{@this.messagesByWeekDay[4]}}" style="left: 20px;"><div style="top: {{@this.messagesByWeekDayPixelOffsets[4]}}px;"></div></div>
+            <div title="[Sat] {{@this.messagesByWeekDay[5]}}" style="left: 25px;"><div style="top: {{@this.messagesByWeekDayPixelOffsets[5]}}px;"></div></div>
+            <div title="[Sun] {{@this.messagesByWeekDay[6]}}" style="left: 30px;"><div style="top: {{@this.messagesByWeekDayPixelOffsets[6]}}px;"></div></div>
+        </div></td>
+    </tr>
+    {{/each}}
+</table>
+<div class="footer">Created with HistoryStats - Telegram, Thanks and Credits to <a href="http://miranda.dark-passage.de/">HistoryStats</a> on {{date}}</div>
+</body></html>

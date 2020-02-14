@@ -1,0 +1,16 @@
+{
+  "name": "HistoryStats-Telegram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "excel4node": "^1.7.2",
+    "ramda": "^0.27.0",
+    "squirrelly": "^7.9.1"
+  }
+}
